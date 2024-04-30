@@ -8,8 +8,8 @@
 #                       https://jusdeliens.com
 #
 # Designed with 💖 by Jusdeliens
-# Under CC BY-NC-ND 3.0 licence 
-# https://creativecommons.org/licenses/by-nc-nd/3.0/ 
+# Under CC BY-NC-ND 4.0 licence  
+# https://creativecommons.org/licenses/by-nc/4.0/deed.en 
 
 import os
 import base64
