@@ -11,6 +11,15 @@
 # Under CC BY-NC-ND 4.0 licence  
 # https://creativecommons.org/licenses/by-nc/4.0/deed.en 
 
+# Allow import without error 
+# "relative import with no known parent package"
+# In vscode, add .env file with PYTHONPATH="..." 
+# with the same dir to allow intellisense
+import os
+import sys
+__workdir__ = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(__workdir__)
+
 import inspect
 import time
 from typing import Any,Callable
