@@ -11,7 +11,17 @@
 # Under CC BY-NC-ND 4.0 licence  
 # https://creativecommons.org/licenses/by-nc/4.0/deed.en 
 
+# Allow import without error 
+# "relative import with no known parent package"
+# In vscode, add .env file with PYTHONPATH="..." 
+# with the same dir to allow intellisense
+import sys
 import os
+__workdir__ = os.path.dirname(os.path.abspath(__file__))
+__libdir__ = os.path.dirname(__workdir__)
+sys.path.append(__workdir__)
+sys.path.append(__libdir__)
+
 import base64
 import logger as anx
 
